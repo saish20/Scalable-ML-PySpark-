@@ -1,0 +1,156 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/04/27 12:13:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/04/27 12:14:01 INFO SparkContext: Running Spark version 3.0.1
+21/04/27 12:14:01 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/04/27 12:14:01 INFO ResourceUtils: ==============================================================
+21/04/27 12:14:01 INFO ResourceUtils: Resources for spark.driver:
+
+21/04/27 12:14:01 INFO ResourceUtils: ==============================================================
+21/04/27 12:14:01 INFO SparkContext: Submitted application: COM6012 AS2_Q1
+21/04/27 12:14:01 INFO SecurityManager: Changing view acls to: acp20srm
+21/04/27 12:14:01 INFO SecurityManager: Changing modify acls to: acp20srm
+21/04/27 12:14:01 INFO SecurityManager: Changing view acls groups to: 
+21/04/27 12:14:01 INFO SecurityManager: Changing modify acls groups to: 
+21/04/27 12:14:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20srm); groups with view permissions: Set(); users  with modify permissions: Set(acp20srm); groups with modify permissions: Set()
+21/04/27 12:14:03 INFO Utils: Successfully started service 'sparkDriver' on port 34246.
+21/04/27 12:14:03 INFO SparkEnv: Registering MapOutputTracker
+21/04/27 12:14:03 INFO SparkEnv: Registering BlockManagerMaster
+21/04/27 12:14:03 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/04/27 12:14:03 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/04/27 12:14:03 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/04/27 12:14:03 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20srm/blockmgr-d07e7e18-71bf-4b68-91c4-32cf4fd9db81
+21/04/27 12:14:03 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+21/04/27 12:14:03 INFO SparkEnv: Registering OutputCommitCoordinator
+21/04/27 12:14:04 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/04/27 12:14:04 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/04/27 12:14:04 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+21/04/27 12:14:04 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node173.shef.ac.uk:4042
+21/04/27 12:14:04 INFO Executor: Starting executor ID driver on host sharc-node173.shef.ac.uk
+21/04/27 12:14:04 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37475.
+21/04/27 12:14:04 INFO NettyBlockTransferService: Server created on sharc-node173.shef.ac.uk:37475
+21/04/27 12:14:04 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/04/27 12:14:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 37475, None)
+21/04/27 12:14:04 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node173.shef.ac.uk:37475 with 408.9 MiB RAM, BlockManagerId(driver, sharc-node173.shef.ac.uk, 37475, None)
+21/04/27 12:14:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 37475, None)
+21/04/27 12:14:04 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node173.shef.ac.uk, 37475, None)
+21/04/27 12:14:06 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acp20srm/com6012/ScalableML/HPC/spark-warehouse').
+21/04/27 12:14:06 INFO SharedState: Warehouse path is 'file:/home/acp20srm/com6012/ScalableML/HPC/spark-warehouse'.
+*******************************************************************************************************
+Subset of data
+*******************************************************************************************************
+Accuracy for Random Forrest = 0.70829 
+AUC for Random Forrest = 0.706731 
+{
+    "bootstrap": true,
+    "cacheNodeIds": false,
+    "checkpointInterval": 10,
+    "featureSubsetStrategy": "all",
+    "featuresCol": "features",
+    "impurity": "gini",
+    "labelCol": "labels",
+    "leafCol": "",
+    "maxBins": 32,
+    "maxDepth": 10,
+    "maxMemoryInMB": 256,
+    "minInfoGain": 0.0,
+    "minInstancesPerNode": 1,
+    "minWeightFractionPerNode": 0.0,
+    "numTrees": 10,
+    "predictionCol": "prediction",
+    "probabilityCol": "probability",
+    "rawPredictionCol": "rawPrediction",
+    "seed": 42,
+    "subsamplingRate": 1.0
+}
+*******************************************************************************************************
+Accuracy for Gradient Boosting = 0.695725 
+AUC for Gradient Boosting = 0.695056 
+{
+    "cacheNodeIds": false,
+    "checkpointInterval": 10,
+    "featureSubsetStrategy": "all",
+    "featuresCol": "features",
+    "impurity": "variance",
+    "labelCol": "labels",
+    "leafCol": "",
+    "lossType": "logistic",
+    "maxBins": 20,
+    "maxDepth": 5,
+    "maxIter": 10,
+    "maxMemoryInMB": 256,
+    "minInfoGain": 0.0,
+    "minInstancesPerNode": 1,
+    "minWeightFractionPerNode": 0.0,
+    "predictionCol": "prediction",
+    "probabilityCol": "probability",
+    "rawPredictionCol": "rawPrediction",
+    "seed": 42,
+    "stepSize": 0.1,
+    "subsamplingRate": 1.0,
+    "validationTol": 0.01
+}
+*******************************************************************************************************
+21/04/27 12:34:56 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:34:59 ERROR LBFGS: Failure again! Giving up and returning. Maybe the objective is just poorly behaved?
+21/04/27 12:35:47 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:38:13 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:40:14 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:40:17 ERROR LBFGS: Failure again! Giving up and returning. Maybe the objective is just poorly behaved?
+21/04/27 12:43:24 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:46:37 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:48:54 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:51:43 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:53:56 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:55:52 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:55:56 ERROR LBFGS: Failure again! Giving up and returning. Maybe the objective is just poorly behaved?
+21/04/27 12:56:40 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 12:58:55 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+21/04/27 13:01:01 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+Accuracy for ShallowNeuralNetwork = 0.640616 
+AUC for ShallowNeuralNetwork = 0.633258 
+{
+    "blockSize": 128,
+    "featuresCol": "features",
+    "labelCol": "labels",
+    "maxIter": 50,
+    "predictionCol": "prediction",
+    "probabilityCol": "probability",
+    "rawPredictionCol": "rawPrediction",
+    "seed": 42,
+    "solver": "l-bfgs",
+    "stepSize": 0.03,
+    "tol": 1e-06,
+    "layers": [
+        28,
+        40,
+        20,
+        2
+    ]
+}
+*******************************************************************************************************
+RandomForestClassifier
+Total execution time: 386.15138006210327 seconds
+   feature  importance
+25    m_bb    0.407186
+27  m_wwbb    0.167812
+26   m_wbb    0.104551
+Accuracy for Random Forrest = 0.707445 
+AUC for Random Forrest = 0.706214 
+*******************************************************************************************************
+GradientBoostingClassification
+Total execution time: 727.5742480754852 seconds
+   feature  importance
+25    m_bb    0.172359
+27  m_wwbb    0.151060
+24   m_jlv    0.148759
+Accuracy for Gradient Boosting = 0.696102 
+AUC for Gradient Boosting = 0.695405 
+*******************************************************************************************************
+ShallowNN
+21/04/27 13:34:31 ERROR LBFGS: Failure! Resetting history: breeze.optimize.FirstOrderException: Line search failed
+Total execution time: 3788.909450531006 seconds
+Accuracy for Shallow NN = 0.643887 
+AUC for Shallow NN = 0.637786 
+we're done
