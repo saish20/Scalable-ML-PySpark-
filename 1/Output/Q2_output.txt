@@ -1,0 +1,579 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/03/12 19:44:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/03/12 19:44:17 INFO SparkContext: Running Spark version 3.0.1
+21/03/12 19:44:17 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/03/12 19:44:17 INFO ResourceUtils: ==============================================================
+21/03/12 19:44:17 INFO ResourceUtils: Resources for spark.driver:
+
+21/03/12 19:44:17 INFO ResourceUtils: ==============================================================
+21/03/12 19:44:17 INFO SparkContext: Submitted application: Assignment 1 Question 2
+21/03/12 19:44:17 INFO SecurityManager: Changing view acls to: acp20srm
+21/03/12 19:44:17 INFO SecurityManager: Changing modify acls to: acp20srm
+21/03/12 19:44:17 INFO SecurityManager: Changing view acls groups to: 
+21/03/12 19:44:17 INFO SecurityManager: Changing modify acls groups to: 
+21/03/12 19:44:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20srm); groups with view permissions: Set(); users  with modify permissions: Set(acp20srm); groups with modify permissions: Set()
+21/03/12 19:44:17 INFO Utils: Successfully started service 'sparkDriver' on port 34554.
+21/03/12 19:44:17 INFO SparkEnv: Registering MapOutputTracker
+21/03/12 19:44:17 INFO SparkEnv: Registering BlockManagerMaster
+21/03/12 19:44:17 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/12 19:44:17 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/12 19:44:17 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/03/12 19:44:17 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20srm/blockmgr-7d7e0ae7-d32a-4ffc-95db-787d85f214a3
+21/03/12 19:44:18 INFO MemoryStore: MemoryStore started with capacity 8.4 GiB
+21/03/12 19:44:18 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/12 19:44:18 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/03/12 19:44:18 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/03/12 19:44:18 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+21/03/12 19:44:18 INFO Utils: Successfully started service 'SparkUI' on port 4043.
+21/03/12 19:44:18 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node173.shef.ac.uk:4043
+21/03/12 19:44:18 INFO Executor: Starting executor ID driver on host sharc-node173.shef.ac.uk
+21/03/12 19:44:18 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46553.
+21/03/12 19:44:18 INFO NettyBlockTransferService: Server created on sharc-node173.shef.ac.uk:46553
+21/03/12 19:44:18 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/12 19:44:18 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 46553, None)
+21/03/12 19:44:18 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node173.shef.ac.uk:46553 with 8.4 GiB RAM, BlockManagerId(driver, sharc-node173.shef.ac.uk, 46553, None)
+21/03/12 19:44:18 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 46553, None)
+21/03/12 19:44:18 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node173.shef.ac.uk, 46553, None)
+21/03/12 19:44:19 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acp20srm/com6012/ScalableML/HPC/spark-warehouse').
+21/03/12 19:44:19 INFO SharedState: Warehouse path is 'file:/home/acp20srm/com6012/ScalableML/HPC/spark-warehouse'.
+21/03/12 19:44:28 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++------+-------+------+---------+---------------------+
+|userId|movieId|rating|timestamp|rank                 |
++------+-------+------+---------+---------------------+
+|56769 |1176   |4.0   |789652004|0.0                  |
+|237556|21     |3.0   |789652009|3.6031565525041345E-8|
+|237556|47     |5.0   |789652009|3.6031565525041345E-8|
+|237556|1079   |3.0   |789652009|3.6031565525041345E-8|
+|5358  |19     |1.0   |822873600|1.4412626210016538E-7|
+|26999 |2      |4.0   |822873600|1.4412626210016538E-7|
+|26999 |7      |5.0   |822873600|1.4412626210016538E-7|
+|26999 |10     |5.0   |822873600|1.4412626210016538E-7|
+|26999 |11     |5.0   |822873600|1.4412626210016538E-7|
+|26999 |12     |1.0   |822873600|1.4412626210016538E-7|
+|26999 |17     |5.0   |822873600|1.4412626210016538E-7|
+|26999 |19     |3.0   |822873600|1.4412626210016538E-7|
+|26999 |21     |4.0   |822873600|1.4412626210016538E-7|
+|26999 |22     |4.0   |822873600|1.4412626210016538E-7|
+|26999 |24     |3.0   |822873600|1.4412626210016538E-7|
+|26999 |32     |4.0   |822873600|1.4412626210016538E-7|
+|26999 |34     |5.0   |822873600|1.4412626210016538E-7|
+|26999 |36     |5.0   |822873600|1.4412626210016538E-7|
+|26999 |45     |3.0   |822873600|1.4412626210016538E-7|
+|26999 |48     |4.0   |822873600|1.4412626210016538E-7|
++------+-------+------+---------+---------------------+
+only showing top 20 rows
+
+==================== Question 2 A ====================
+Results for split 1, 50-50 
+==================== ALS Setting 1 ====================
+21/03/12 19:44:50 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:44:50 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:45:31 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+21/03/12 19:45:31 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+21/03/12 19:45:32 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+21/03/12 19:45:32 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+21/03/12 19:45:48 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:45:48 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:46:45 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 0.7900549658628574
+21/03/12 19:47:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 0.6241868490845608
+21/03/12 19:47:59 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.6007062631598904
+==================== ALS Setting 2 ====================
+21/03/12 19:48:36 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:49:53 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:51:12 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 0.7904877587686825
+21/03/12 19:51:52 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 0.6248708967631347
+21/03/12 19:52:31 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.6029100292051355
+==================== ALS Setting 3 ====================
+21/03/12 19:53:08 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:53:52 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:54:36 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 0.9057442996142094
+21/03/12 19:55:09 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 0.8203727362836352
+21/03/12 19:55:42 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.652359411550614
+Results for split 1, 65-35 
+==================== ALS Setting 1 ====================
+21/03/12 19:56:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:56:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:57:07 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:57:07 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 19:57:47 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 0.809318084167302
+21/03/12 19:58:18 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 0.6549957613602322
+21/03/12 19:58:48 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.609648976445919
+==================== ALS Setting 2 ====================
+21/03/12 19:59:19 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:00:37 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:01:32 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 0.8081638888898034
+21/03/12 20:02:03 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 0.6531288713054905
+21/03/12 20:02:34 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.6107089338059459
+==================== ALS Setting 3 ====================
+21/03/12 20:03:05 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:03:54 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:04:32 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 1.065515353282461
+21/03/12 20:05:03 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 1.1353229680806474
+21/03/12 20:05:34 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.6975534170997201
+Results for split 1, 80-20 
+==================== ALS Setting 1 ====================
+21/03/12 20:06:04 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:06:04 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:07:06 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:07:06 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:07:46 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 0.8597537769411381
+21/03/12 20:08:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 0.739176556964552
+21/03/12 20:08:45 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.6445064305633996
+==================== ALS Setting 2 ====================
+21/03/12 20:09:15 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:10:46 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:11:29 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 0.8571636817221242
+21/03/12 20:11:59 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 0.7347295772634271
+21/03/12 20:12:29 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.6448404490669746
+==================== ALS Setting 3 ====================
+21/03/12 20:12:59 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:13:53 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+21/03/12 20:14:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+1. Root-mean-square error = 1.2808257572035395
+21/03/12 20:14:53 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+2. Mean-square error = 1.6405146203160204
+21/03/12 20:15:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+3. Mean-absolute error = 0.7927797078689796
+==================== Question 2 B ====================
+Results for split 1, 50:50 
++---+--------------------+----------+
+| id|            features|prediction|
++---+--------------------+----------+
+| 10|[-0.9663316, 0.59...|        16|
+| 40|[-0.95268863, 0.9...|         5|
+| 50|[-0.973515, 1.387...|         7|
+| 60|[-0.6864383, 0.90...|         7|
+|110|[-0.6872391, 0.18...|         7|
+|120|[-0.87787545, 1.0...|        17|
+|160|[-0.99208546, 0.9...|        14|
+|170|[-1.3994927, 0.80...|         8|
+|180|[-0.9163211, 0.79...|         1|
+|190|[0.26524022, 1.04...|         3|
+|210|[-1.1394459, 1.35...|        14|
+|220|[-0.07635739, 0.0...|         2|
+|230|[-1.0077789, 0.78...|        19|
+|240|[-0.84369755, 0.6...|        16|
+|300|[-0.5376415, 0.75...|         1|
+|310|[-0.83040166, 1.0...|         8|
+|320|[-0.42472994, 1.5...|         4|
+|360|[-0.6699176, 0.32...|        12|
+|370|[-0.51556695, 0.7...|         6|
+|390|[-0.68783075, 0.9...|         1|
++---+--------------------+----------+
+only showing top 20 rows
+
+================= Question 2. B. 1) ================
+The 3 largest training clusters are as below: 
+====================================================
++----------+-----+
+|prediction|count|
++----------+-----+
+|        11|12387|
+|         1|10959|
+|        14|10955|
++----------+-----+
+
+================= Question 2. B. 1) ================
+The 3 largest test clusters are as below: 
+====================================================
++----------+-----+
+|prediction|count|
++----------+-----+
+|        19|15014|
+|         6|13557|
+|         9|12173|
++----------+-----+
+
+====================================================
+The largest training cluster is 11
+====================================================
+====================================================
+The largest test cluster is 19
+====================================================
+The users in largest train cluster are: 
++----+--------------------+----------+
+|  id|            features|prediction|
++----+--------------------+----------+
+| 510|[-0.4890173, 1.00...|        11|
+| 680|[-0.50088024, 0.5...|        11|
+| 790|[-0.5336428, 0.86...|        11|
+| 860|[-0.3760852, 1.04...|        11|
+| 950|[-0.5101589, 0.52...|        11|
+|1640|[-0.72497123, 0.6...|        11|
+|1660|[-0.7561016, 0.92...|        11|
+|1800|[-0.3878925, 0.95...|        11|
+|2260|[-0.5241687, 0.98...|        11|
+|2500|[-0.43676594, 0.9...|        11|
+|2510|[-0.9770407, 0.96...|        11|
+|2650|[-0.40325043, 0.7...|        11|
+|2680|[-0.3511856, 0.77...|        11|
+|2690|[-0.42180485, 1.1...|        11|
+|2820|[-0.24303015, 1.1...|        11|
+|2870|[-0.8580117, 0.82...|        11|
+|2970|[-0.57594657, 0.9...|        11|
+|3020|[-0.62733305, 0.9...|        11|
+|3490|[-0.7174396, 1.14...|        11|
+|3700|[-0.64756584, 0.6...|        11|
++----+--------------------+----------+
+only showing top 20 rows
+
+The users in largest test cluster are: 
++----+--------------------+----------+
+|  id|            features|prediction|
++----+--------------------+----------+
+| 350|[-0.26287273, -0....|        19|
+| 450|[-0.15654187, -0....|        19|
+| 540|[-0.35555384, -0....|        19|
+|1890|[-0.04667208, -0....|        19|
+|1900|[0.05047305, -0.5...|        19|
+|2110|[-0.445167, -0.29...|        19|
+|2150|[-0.032090396, -0...|        19|
+|2400|[-0.21963786, -0....|        19|
+|2440|[-0.010760034, -0...|        19|
+|2520|[-0.08415763, -0....|        19|
+|2610|[-0.25435382, -0....|        19|
+|2640|[-0.15205735, -0....|        19|
+|2770|[-0.14796917, -0....|        19|
+|2780|[-0.25192815, -0....|        19|
+|3110|[-0.32360736, -0....|        19|
+|3560|[-0.28557384, -0....|        19|
+|3690|[-0.43120912, -1....|        19|
+|3710|[-0.20644899, -0....|        19|
+|3800|[-0.16337866, -0....|        19|
+|4110|[-0.44610593, -0....|        19|
++----+--------------------+----------+
+only showing top 20 rows
+
+================= Question 2. B. 2  ) ================
+====================================================
+The top 5 genres for training data are :
+====================================================
+21/03/12 20:16:00 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++--------+------+
+|  genres| count|
++--------+------+
+|   Drama|180291|
+|  Comedy|112333|
+|Thriller|102554|
+| Romance| 80177|
+|  Action| 72729|
++--------+------+
+
+====================================================
+The top 5 genres for test data are :
+====================================================
+21/03/12 20:16:20 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++--------+------+
+|  genres| count|
++--------+------+
+|   Drama|495325|
+|  Action|279918|
+|Thriller|274747|
+|  Comedy|233288|
+|   Crime|231472|
++--------+------+
+
+Results for split 2 65:35 
++---+--------------------+----------+
+| id|            features|prediction|
++---+--------------------+----------+
+| 10|[-0.11453521, -1....|         3|
+| 20|[-1.1282262, -0.0...|         8|
+| 30|[0.60795736, -1.5...|         7|
+| 40|[0.9692369, -1.58...|         0|
+| 50|[0.13903263, -1.4...|        11|
+| 60|[-0.20147762, -1....|         2|
+| 70|[-0.03777379, -1....|        14|
+|100|[0.3833316, -1.15...|        18|
+|110|[-0.1955096, -0.5...|        14|
+|120|[0.5022931, -1.01...|        15|
+|160|[0.22050484, -1.2...|         6|
+|170|[-0.08135189, -1....|        12|
+|180|[0.15037163, -1.4...|        14|
+|190|[0.11912338, -0.5...|         5|
+|210|[0.49337786, -1.4...|        11|
+|220|[0.026439497, -0....|         9|
+|230|[1.5486951, -0.86...|        17|
+|240|[-0.3875111, -1.0...|         6|
+|250|[0.13273811, -1.2...|         6|
+|270|[0.029131308, -1....|         5|
++---+--------------------+----------+
+only showing top 20 rows
+
+================= Question 2. B. 1) ================
+The 3 largest training clusters are as below: 
+====================================================
++----------+-----+
+|prediction|count|
++----------+-----+
+|        18|16185|
+|         6|15550|
+|         7|14456|
++----------+-----+
+
+================= Question 2. B. 1) ================
+The 3 largest test clusters are as below: 
+====================================================
++----------+-----+
+|prediction|count|
++----------+-----+
+|        16|10598|
+|        12| 8533|
+|        11| 8272|
++----------+-----+
+
+====================================================
+The largest training cluster is 18
+====================================================
+====================================================
+The largest test cluster is 16
+====================================================
+The users in largest train cluster are: 
++----+--------------------+----------+
+|  id|            features|prediction|
++----+--------------------+----------+
+| 100|[0.3833316, -1.15...|        18|
+| 360|[0.120485716, -0....|        18|
+| 590|[0.4574103, -0.88...|        18|
+| 680|[0.22497055, -1.1...|        18|
+| 770|[0.3919544, -0.87...|        18|
+| 950|[0.36863038, -0.7...|        18|
+|1180|[0.20529075, -1.1...|        18|
+|1440|[0.54248595, -1.3...|        18|
+|1500|[0.3718381, -0.32...|        18|
+|1650|[0.09802279, -1.0...|        18|
+|1800|[0.6841665, -1.09...|        18|
+|1990|[0.5798646, -0.98...|        18|
+|2090|[0.1249086, -1.28...|        18|
+|2150|[0.51539516, -1.1...|        18|
+|2260|[0.54483503, -0.9...|        18|
+|2470|[0.3331384, -1.27...|        18|
+|2590|[0.697216, -1.258...|        18|
+|2700|[0.1772417, -0.84...|        18|
+|2770|[0.30701622, -1.3...|        18|
+|2820|[0.6365015, -1.00...|        18|
++----+--------------------+----------+
+only showing top 20 rows
+
+The users in largest test cluster are: 
++----+--------------------+----------+
+|  id|            features|prediction|
++----+--------------------+----------+
+| 280|[-1.8689238, -0.1...|        16|
+| 350|[-1.7781724, -0.3...|        16|
+| 560|[-1.9574237, -0.2...|        16|
+|1140|[-1.8787172, -0.1...|        16|
+|1310|[-1.7796962, -0.2...|        16|
+|1890|[-2.186043, -0.04...|        16|
+|1900|[-1.8749284, -0.2...|        16|
+|2110|[-1.6809726, -0.0...|        16|
+|2190|[-1.8637811, -0.1...|        16|
+|2300|[-1.5242628, 0.14...|        16|
+|2410|[-1.732444, 0.017...|        16|
+|2640|[-1.804418, -0.23...|        16|
+|2920|[-1.9775897, -0.5...|        16|
+|3800|[-2.2180128, -0.1...|        16|
+|4330|[-1.6377527, -0.2...|        16|
+|4520|[-2.086005, 0.086...|        16|
+|4750|[-1.7220353, 0.09...|        16|
+|4760|[-2.2131941, 0.03...|        16|
+|4770|[-1.9352081, -0.5...|        16|
+|5550|[-1.9410181, -0.2...|        16|
++----+--------------------+----------+
+only showing top 20 rows
+
+================= Question 2. B. 2  ) ================
+====================================================
+The top 5 genres for training data are :
+====================================================
+21/03/12 20:16:47 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++--------+------+
+|  genres| count|
++--------+------+
+|   Drama|627143|
+|  Comedy|406695|
+|Thriller|321864|
+|  Action|277924|
+|   Crime|252902|
++--------+------+
+
+====================================================
+The top 5 genres for test data are :
+====================================================
+21/03/12 20:17:06 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++--------+------+
+|  genres| count|
++--------+------+
+|   Drama|344020|
+|Thriller|198739|
+|  Action|182085|
+|   Crime|165733|
+|  Comedy|137967|
++--------+------+
+
+Results for split 3, 80:20 
++---+--------------------+----------+
+| id|            features|prediction|
++---+--------------------+----------+
+| 10|[-0.48972186, 0.7...|         6|
+| 20|[-0.29197332, 0.4...|        17|
+| 30|[-0.14503269, 0.6...|        16|
+| 40|[0.44037202, 1.34...|         3|
+| 50|[-0.15287587, 1.0...|         2|
+| 60|[-0.08670596, 1.1...|         2|
+| 70|[-0.68594474, 1.1...|         9|
+| 80|[-0.040502273, 0....|         0|
+| 90|[0.38835576, 0.83...|         4|
+|100|[-0.29164258, 1.0...|         8|
+|110|[-0.8341183, 1.14...|         9|
+|120|[-0.35373652, 0.6...|        13|
+|140|[-0.007107317, 0....|         5|
+|150|[-0.5709472, 0.32...|        12|
+|160|[-0.27669656, 1.0...|         8|
+|170|[0.36783376, 0.66...|        17|
+|180|[-0.0642395, 1.34...|         3|
+|190|[-0.5753329, 0.80...|        15|
+|210|[0.005063952, 0.8...|        13|
+|220|[-0.09300853, 0.1...|        11|
++---+--------------------+----------+
+only showing top 20 rows
+
+================= Question 2. B. 1) ================
+The 3 largest training clusters are as below: 
+====================================================
++----------+-----+
+|prediction|count|
++----------+-----+
+|         8|22255|
+|        16|19914|
+|         3|17934|
++----------+-----+
+
+================= Question 2. B. 1) ================
+The 3 largest test clusters are as below: 
+====================================================
++----------+-----+
+|prediction|count|
++----------+-----+
+|         6| 4797|
+|         3| 4507|
+|        13| 4266|
++----------+-----+
+
+====================================================
+The largest training cluster is 8
+====================================================
+====================================================
+The largest test cluster is 6
+====================================================
+The users in largest train cluster are: 
++----+--------------------+----------+
+|  id|            features|prediction|
++----+--------------------+----------+
+| 100|[-0.29164258, 1.0...|         8|
+| 160|[-0.27669656, 1.0...|         8|
+| 510|[-0.32991254, 0.7...|         8|
+| 930|[-0.1627444, 0.76...|         8|
+| 980|[-0.4060879, 0.86...|         8|
+|1330|[-0.13226618, 1.0...|         8|
+|1520|[-0.82832503, 0.9...|         8|
+|1650|[-0.050070625, 0....|         8|
+|1710|[-0.24269088, 0.8...|         8|
+|1760|[0.0027456472, 0....|         8|
+|1810|[-0.5188497, 1.00...|         8|
+|1940|[-0.4234377, 0.83...|         8|
+|2320|[-0.41556805, 0.9...|         8|
+|2500|[-0.28712147, 0.9...|         8|
+|2560|[-0.47847342, 0.8...|         8|
+|2600|[-0.4535479, 0.67...|         8|
+|3000|[-0.09285865, 1.1...|         8|
+|3130|[-0.620586, 1.519...|         8|
+|3290|[-0.49977666, 0.7...|         8|
+|3350|[-0.550158, 0.870...|         8|
++----+--------------------+----------+
+only showing top 20 rows
+
+The users in largest test cluster are: 
++-----+--------------------+----------+
+|   id|            features|prediction|
++-----+--------------------+----------+
+|  430|[-1.4060168, -1.0...|         6|
+|  540|[-1.643519, -0.80...|         6|
+| 1180|[-1.5767285, -0.8...|         6|
+| 2280|[-1.2933773, -0.7...|         6|
+| 2720|[-1.439908, -0.65...|         6|
+| 2920|[-1.6411077, -0.4...|         6|
+| 4760|[-1.8515832, -0.6...|         6|
+| 4770|[-1.5298945, -0.9...|         6|
+| 5800|[-1.6717405, -0.7...|         6|
+| 6720|[-1.4831973, -0.8...|         6|
+| 8780|[-1.630317, -0.83...|         6|
+| 9270|[-1.6890392, -0.4...|         6|
+| 9940|[-1.2910625, -0.4...|         6|
+|10000|[-1.4421661, -0.6...|         6|
+|10260|[-1.5935471, -0.8...|         6|
+|10710|[-1.4221317, -0.9...|         6|
+|11050|[-1.4768091, -0.8...|         6|
+|11140|[-1.4918162, -0.6...|         6|
+|11900|[-1.4299741, -0.7...|         6|
+|11980|[-1.371469, -0.55...|         6|
++-----+--------------------+----------+
+only showing top 20 rows
+
+================= Question 2. B. 2  ) ================
+====================================================
+The top 5 genres for training data are :
+====================================================
+21/03/12 20:17:35 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++---------+------+
+|   genres| count|
++---------+------+
+|    Drama|798895|
+|   Comedy|622831|
+| Thriller|403101|
+|   Action|381233|
+|Adventure|328023|
++---------+------+
+
+====================================================
+The top 5 genres for test data are :
+====================================================
+21/03/12 20:17:56 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++--------+------+
+|  genres| count|
++--------+------+
+|   Drama|199117|
+|  Comedy| 99041|
+|Thriller| 96616|
+|  Action| 87141|
+|   Crime| 78308|
++--------+------+
+

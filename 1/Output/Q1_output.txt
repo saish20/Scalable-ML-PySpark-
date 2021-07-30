@@ -1,0 +1,184 @@
+Conda uses environments to load different sets of Python packages
+type conda env list to see the environments availible.
+21/03/12 20:16:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/03/12 20:16:20 INFO SparkContext: Running Spark version 3.0.1
+21/03/12 20:16:20 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/03/12 20:16:20 INFO ResourceUtils: ==============================================================
+21/03/12 20:16:20 INFO ResourceUtils: Resources for spark.driver:
+
+21/03/12 20:16:20 INFO ResourceUtils: ==============================================================
+21/03/12 20:16:20 INFO SparkContext: Submitted application: Assignement 1 Question 1
+21/03/12 20:16:20 INFO SecurityManager: Changing view acls to: acp20srm
+21/03/12 20:16:20 INFO SecurityManager: Changing modify acls to: acp20srm
+21/03/12 20:16:20 INFO SecurityManager: Changing view acls groups to: 
+21/03/12 20:16:20 INFO SecurityManager: Changing modify acls groups to: 
+21/03/12 20:16:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(acp20srm); groups with view permissions: Set(); users  with modify permissions: Set(acp20srm); groups with modify permissions: Set()
+21/03/12 20:16:21 INFO Utils: Successfully started service 'sparkDriver' on port 39497.
+21/03/12 20:16:21 INFO SparkEnv: Registering MapOutputTracker
+21/03/12 20:16:21 INFO SparkEnv: Registering BlockManagerMaster
+21/03/12 20:16:21 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/12 20:16:21 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/12 20:16:21 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/03/12 20:16:21 INFO DiskBlockManager: Created local directory at /mnt/fastdata/acp20srm/blockmgr-dd9bc6eb-a726-48fc-ad13-c28fcb95ecaa
+21/03/12 20:16:21 INFO MemoryStore: MemoryStore started with capacity 408.9 MiB
+21/03/12 20:16:21 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/12 20:16:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+21/03/12 20:16:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+21/03/12 20:16:21 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+21/03/12 20:16:21 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+21/03/12 20:16:21 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+21/03/12 20:16:21 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sharc-node173.shef.ac.uk:4044
+21/03/12 20:16:22 INFO Executor: Starting executor ID driver on host sharc-node173.shef.ac.uk
+21/03/12 20:16:22 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36224.
+21/03/12 20:16:22 INFO NettyBlockTransferService: Server created on sharc-node173.shef.ac.uk:36224
+21/03/12 20:16:22 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/12 20:16:22 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 36224, None)
+21/03/12 20:16:22 INFO BlockManagerMasterEndpoint: Registering block manager sharc-node173.shef.ac.uk:36224 with 408.9 MiB RAM, BlockManagerId(driver, sharc-node173.shef.ac.uk, 36224, None)
+21/03/12 20:16:22 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sharc-node173.shef.ac.uk, 36224, None)
+21/03/12 20:16:22 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sharc-node173.shef.ac.uk, 36224, None)
+21/03/12 20:16:23 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/acp20srm/com6012/ScalableML/HPC/spark-warehouse').
+21/03/12 20:16:23 INFO SharedState: Warehouse path is 'file:/home/acp20srm/com6012/ScalableML/HPC/spark-warehouse'.
++------------------------------------------------------------------------------------------------------------------------------+
+|value                                                                                                                         |
++------------------------------------------------------------------------------------------------------------------------------+
+|199.72.81.55 - - [01/Jul/1995:00:00:01 -0400] "GET /history/apollo/ HTTP/1.0" 200 6245                                        |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:06 -0400] "GET /shuttle/countdown/ HTTP/1.0" 200 3985                             |
+|199.120.110.21 - - [01/Jul/1995:00:00:09 -0400] "GET /shuttle/missions/sts-73/mission-sts-73.html HTTP/1.0" 200 4085          |
+|burger.letters.com - - [01/Jul/1995:00:00:11 -0400] "GET /shuttle/countdown/liftoff.html HTTP/1.0" 304 0                      |
+|199.120.110.21 - - [01/Jul/1995:00:00:11 -0400] "GET /shuttle/missions/sts-73/sts-73-patch-small.gif HTTP/1.0" 200 4179       |
+|burger.letters.com - - [01/Jul/1995:00:00:12 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 304 0                           |
+|burger.letters.com - - [01/Jul/1995:00:00:12 -0400] "GET /shuttle/countdown/video/livevideo.gif HTTP/1.0" 200 0               |
+|205.212.115.106 - - [01/Jul/1995:00:00:12 -0400] "GET /shuttle/countdown/countdown.html HTTP/1.0" 200 3985                    |
+|d104.aa.net - - [01/Jul/1995:00:00:13 -0400] "GET /shuttle/countdown/ HTTP/1.0" 200 3985                                      |
+|129.94.144.152 - - [01/Jul/1995:00:00:13 -0400] "GET / HTTP/1.0" 200 7074                                                     |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:14 -0400] "GET /shuttle/countdown/count.gif HTTP/1.0" 200 40310                   |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:14 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786                       |
+|unicomp6.unicomp.net - - [01/Jul/1995:00:00:14 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204                       |
+|d104.aa.net - - [01/Jul/1995:00:00:15 -0400] "GET /shuttle/countdown/count.gif HTTP/1.0" 200 40310                            |
+|d104.aa.net - - [01/Jul/1995:00:00:15 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786                                |
+|d104.aa.net - - [01/Jul/1995:00:00:15 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204                                |
+|129.94.144.152 - - [01/Jul/1995:00:00:17 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 304 0                               |
+|199.120.110.21 - - [01/Jul/1995:00:00:17 -0400] "GET /images/launch-logo.gif HTTP/1.0" 200 1713                               |
+|ppptky391.asahi-net.or.jp - - [01/Jul/1995:00:00:18 -0400] "GET /facts/about_ksc.html HTTP/1.0" 200 3977                      |
+|net-1-141.eden.com - - [01/Jul/1995:00:00:19 -0400] "GET /shuttle/missions/sts-71/images/KSC-95EC-0916.jpg HTTP/1.0" 200 34029|
++------------------------------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+|host                     |timestamp                 |request                                                       |HTTP reply code|bytes in the reply|
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+|199.72.81.55             |01/Jul/1995:00:00:01 -0400|GET /history/apollo/ HTTP/1.0                                 |200            |6245              |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:06 -0400|GET /shuttle/countdown/ HTTP/1.0                              |200            |3985              |
+|199.120.110.21           |01/Jul/1995:00:00:09 -0400|GET /shuttle/missions/sts-73/mission-sts-73.html HTTP/1.0     |200            |4085              |
+|burger.letters.com       |01/Jul/1995:00:00:11 -0400|GET /shuttle/countdown/liftoff.html HTTP/1.0                  |304            |0                 |
+|199.120.110.21           |01/Jul/1995:00:00:11 -0400|GET /shuttle/missions/sts-73/sts-73-patch-small.gif HTTP/1.0  |200            |4179              |
+|burger.letters.com       |01/Jul/1995:00:00:12 -0400|GET /images/NASA-logosmall.gif HTTP/1.0                       |304            |0                 |
+|burger.letters.com       |01/Jul/1995:00:00:12 -0400|GET /shuttle/countdown/video/livevideo.gif HTTP/1.0           |200            |0                 |
+|205.212.115.106          |01/Jul/1995:00:00:12 -0400|GET /shuttle/countdown/countdown.html HTTP/1.0                |200            |3985              |
+|d104.aa.net              |01/Jul/1995:00:00:13 -0400|GET /shuttle/countdown/ HTTP/1.0                              |200            |3985              |
+|129.94.144.152           |01/Jul/1995:00:00:13 -0400|GET / HTTP/1.0                                                |200            |7074              |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:14 -0400|GET /shuttle/countdown/count.gif HTTP/1.0                     |200            |40310             |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:14 -0400|GET /images/NASA-logosmall.gif HTTP/1.0                       |200            |786               |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:14 -0400|GET /images/KSC-logosmall.gif HTTP/1.0                        |200            |1204              |
+|d104.aa.net              |01/Jul/1995:00:00:15 -0400|GET /shuttle/countdown/count.gif HTTP/1.0                     |200            |40310             |
+|d104.aa.net              |01/Jul/1995:00:00:15 -0400|GET /images/NASA-logosmall.gif HTTP/1.0                       |200            |786               |
+|d104.aa.net              |01/Jul/1995:00:00:15 -0400|GET /images/KSC-logosmall.gif HTTP/1.0                        |200            |1204              |
+|129.94.144.152           |01/Jul/1995:00:00:17 -0400|GET /images/ksclogo-medium.gif HTTP/1.0                       |304            |0                 |
+|199.120.110.21           |01/Jul/1995:00:00:17 -0400|GET /images/launch-logo.gif HTTP/1.0                          |200            |1713              |
+|ppptky391.asahi-net.or.jp|01/Jul/1995:00:00:18 -0400|GET /facts/about_ksc.html HTTP/1.0                            |200            |3977              |
+|net-1-141.eden.com       |01/Jul/1995:00:00:19 -0400|GET /shuttle/missions/sts-71/images/KSC-95EC-0916.jpg HTTP/1.0|200            |34029             |
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+only showing top 20 rows
+
++--------------------+----+---+
+|                host|hour|day|
++--------------------+----+---+
+|        199.72.81.55|  00| 01|
+|unicomp6.unicomp.net|  00| 01|
+|      199.120.110.21|  00| 01|
+|  burger.letters.com|  00| 01|
+|      199.120.110.21|  00| 01|
+|  burger.letters.com|  00| 01|
+|  burger.letters.com|  00| 01|
+|     205.212.115.106|  00| 01|
+|         d104.aa.net|  00| 01|
+|      129.94.144.152|  00| 01|
+|unicomp6.unicomp.net|  00| 01|
+|unicomp6.unicomp.net|  00| 01|
+|unicomp6.unicomp.net|  00| 01|
+|         d104.aa.net|  00| 01|
+|         d104.aa.net|  00| 01|
+|         d104.aa.net|  00| 01|
+|      129.94.144.152|  00| 01|
+|      199.120.110.21|  00| 01|
+|ppptky391.asahi-n...|  00| 01|
+|  net-1-141.eden.com|  00| 01|
++--------------------+----+---+
+only showing top 20 rows
+
+==================== Part A ====================
+==================== Question 1. A. 1) ====================
+There are 13067 requests are from Japanese universities ending with .ac.jp .
+====================================================
+==================== Question 1.A. 2) ====================
+There are 25009 requests are from UK universities ending with .ac.uk .
+====================================================
+==================== Question 1. A. 3) ====================
+There are 218449 requests are from US universities ending with .edu .
+====================================================
+==================== Part B ====================
+==================== Question 1. B. 1) ====================
+top 9 most frequent universities according to the host domain in Japan:
++--------------+-----+
+|university    |count|
++--------------+-----+
+|tohoku.ac.jp  |824  |
+|kyoto-u.ac.jp |703  |
+|nagoya-u.ac.jp|692  |
+|u-tokyo.ac.jp |689  |
+|osaka-u.ac.jp |527  |
+|shizuoka.ac.jp|472  |
+|ritsumei.ac.jp|426  |
+|keio.ac.jp    |346  |
+|waseda.ac.jp  |337  |
++--------------+-----+
+only showing top 9 rows
+
+top 9 most frequent universities according to the host domain in the UK:
++-----------+-----+
+|university |count|
++-----------+-----+
+|hensa.ac.uk|4257 |
+|rl.ac.uk   |1158 |
+|ucl.ac.uk  |1036 |
+|man.ac.uk  |921  |
+|ic.ac.uk   |851  |
+|soton.ac.uk|808  |
+|bham.ac.uk |629  |
+|shef.ac.uk |623  |
+|le.ac.uk   |616  |
++-----------+-----+
+only showing top 9 rows
+
+top 9 most frequent universities according to the host domain in the US:
++--------------+-----+
+|university    |count|
++--------------+-----+
+|tamu.edu      |6062 |
+|berkeley.edu  |5439 |
+|fsu.edu       |4418 |
+|umn.edu       |4404 |
+|mit.edu       |3966 |
+|washington.edu|3893 |
+|uiuc.edu      |3750 |
+|utexas.edu    |3665 |
+|cmu.edu       |3244 |
++--------------+-----+
+only showing top 9 rows
+
+==================== Question 1. B. 2)  ====================
+Pie Charts created for all 3 regions
+==================== Part C ====================
+==================== Question 1. C ====================
+Heat maps created for all 3 regions
